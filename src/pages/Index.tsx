@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { AlertTriangle } from "lucide-react";
 import UrgencyBar from "@/components/UrgencyBar";
 import CountdownTimer from "@/components/CountdownTimer";
-
 const Index = () => {
   // Set target date to 5 days, 3 hours, 51 minutes from now (matching the screenshot)
   const [targetDate] = useState(() => {
@@ -13,14 +12,11 @@ const Index = () => {
     date.setMinutes(date.getMinutes() + 51);
     return date;
   });
-
   const handleCTAClick = () => {
     // Add your CTA logic here (e.g., redirect to checkout, open modal, etc.)
     console.log("CTA clicked!");
   };
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Urgency Bar */}
       <UrgencyBar targetDate={targetDate} percentageFilled={87} />
 
@@ -30,17 +26,10 @@ const Index = () => {
           {/* Left Side - Image/Video Section */}
           <div className="space-y-6">
             <div className="relative rounded-2xl overflow-hidden border border-border bg-card">
-              <img
-                src="https://images.unsplash.com/photo-1560439514-4e9645039924?w=800&auto=format&fit=crop"
-                alt="Workshop presenter"
-                className="w-full aspect-video object-cover"
-              />
+              <img src="https://images.unsplash.com/photo-1560439514-4e9645039924?w=800&auto=format&fit=crop" alt="Workshop presenter" className="w-full aspect-video object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
-                <Button
-                  onClick={handleCTAClick}
-                  className="w-full md:w-auto bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold text-lg py-6 px-8 rounded-full shadow-lg transition-all duration-300 hover:scale-105"
-                >
+                <Button onClick={handleCTAClick} className="w-full md:w-auto bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold text-lg py-6 px-8 rounded-full shadow-lg transition-all duration-300 hover:scale-105">
                   GARANTA SUA VAGA
                 </Button>
                 <p className="text-foreground text-sm mt-3 font-medium">
@@ -75,19 +64,14 @@ const Index = () => {
               <span className="text-accent font-bold text-sm uppercase tracking-wide">
                 WORKSHOP LIVE
               </span>
-              <span className="text-foreground font-bold text-sm">
-                | QUA 08/10 ÀS 19H
-              </span>
+              <span className="text-foreground font-bold text-sm">| QUA 15/10 ÀS 20H</span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
               Últimas vagas para viver a experiência completa do Workshop
             </h1>
 
-            <Button
-              onClick={handleCTAClick}
-              className="w-full md:w-auto bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-xl py-8 px-12 rounded-2xl shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-primary/50"
-            >
+            <Button onClick={handleCTAClick} className="w-full md:w-auto bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-xl py-8 px-12 rounded-2xl shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-primary/50">
               Garanta Seu VIP por Apenas R$48
             </Button>
 
@@ -114,8 +98,6 @@ const Index = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
