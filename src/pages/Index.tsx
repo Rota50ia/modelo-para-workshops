@@ -9,14 +9,15 @@ const Index = () => {
     const date = new Date();
     const currentYear = date.getFullYear();
     const currentMonth = date.getMonth();
-
+    
     // Set to October 15 at 20:00
     const eventDate = new Date(currentYear, 9, 15, 20, 0, 0); // Month is 0-indexed (9 = October)
-
+    
     // If the date has passed this year, set it for next year
     if (eventDate < date) {
       eventDate.setFullYear(currentYear + 1);
     }
+    
     return eventDate;
   });
   const handleCTAClick = () => {
@@ -74,8 +75,9 @@ const Index = () => {
               <span className="text-foreground font-bold text-sm">| QUA 15/10 ÀS 20H</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">Workshop Live "Toque seu Primeiro Samba" com Carlos Café.                     
-                                                              Últimas vagas para viver a experiência completa do Workshop</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+              Últimas vagas para viver a experiência completa do Workshop
+            </h1>
 
             <Button onClick={handleCTAClick} className="w-full md:w-auto bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-xl py-8 px-12 rounded-2xl shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-primary/50">
               Garanta Seu VIP por Apenas R$48
