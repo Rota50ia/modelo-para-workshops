@@ -4,13 +4,21 @@ import { AlertTriangle } from "lucide-react";
 import UrgencyBar from "@/components/UrgencyBar";
 import CountdownTimer from "@/components/CountdownTimer";
 const Index = () => {
-  // Set target date to 5 days, 3 hours, 51 minutes from now (matching the screenshot)
+  // Event date: October 15, 2025 at 20:00 (8:00 PM)
   const [targetDate] = useState(() => {
     const date = new Date();
-    date.setDate(date.getDate() + 5);
-    date.setHours(date.getHours() + 3);
-    date.setMinutes(date.getMinutes() + 51);
-    return date;
+    const currentYear = date.getFullYear();
+    const currentMonth = date.getMonth();
+    
+    // Set to October 15 at 20:00
+    const eventDate = new Date(currentYear, 9, 15, 20, 0, 0); // Month is 0-indexed (9 = October)
+    
+    // If the date has passed this year, set it for next year
+    if (eventDate < date) {
+      eventDate.setFullYear(currentYear + 1);
+    }
+    
+    return eventDate;
   });
   const handleCTAClick = () => {
     // Add your CTA logic here (e.g., redirect to checkout, open modal, etc.)
