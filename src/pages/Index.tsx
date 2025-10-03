@@ -74,9 +74,8 @@ const Index = () => {
               <span className="text-foreground font-bold text-sm">| QUA 15/10 ÀS 20H</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">Workshop &quot;Toque seu Primeiro Samba&quot;com Carlos Café.
- 
-Últimas vagas para viver a experiência completa do Workshop</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">Workshop            "Toque seu Primeiro Samba" com Carlos Café.                     
+                                  Últimas vagas para viver a experiência completa do Workshop</h1>
 
             <Button onClick={handleCTAClick} className="w-full md:w-auto bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-xl py-8 px-12 rounded-2xl shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-primary/50">
               Garanta Seu VIP por Apenas R$48
