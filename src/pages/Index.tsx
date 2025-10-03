@@ -76,7 +76,7 @@ const Index = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-              Últimas vagas para viver a experiência completa do Workshop
+              Workshop Live "Toque seu primeiro samba" com Carlos Café. Últimas vagas para viver a experiência completa do Workshop que vai te levar para o próximo nível
             </h1>
 
             <Button onClick={handleCTAClick} className="w-full md:w-auto bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-xl py-8 px-12 rounded-2xl shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-primary/50">
