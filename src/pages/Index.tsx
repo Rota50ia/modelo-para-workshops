@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { AlertTriangle } from "lucide-react";
 import UrgencyBar from "@/components/UrgencyBar";
 import CountdownTimer from "@/components/CountdownTimer";
+import heroImage from "@/assets/carlos-cafe-hero.png";
 const Index = () => {
   // Event date: October 15, 2025 at 20:00 (8:00 PM)
   const [targetDate] = useState(() => {
@@ -34,7 +35,7 @@ const Index = () => {
           {/* Left Side - Image/Video Section */}
           <div className="space-y-6">
             <div className="relative rounded-2xl overflow-hidden border border-border bg-card">
-              <img src="https://images.unsplash.com/photo-1560439514-4e9645039924?w=800&auto=format&fit=crop" alt="Workshop presenter" className="w-full aspect-video object-cover" />
+              <img src={heroImage} alt="Carlos Café - Workshop presenter" className="w-full aspect-[4/3] object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <Button onClick={handleCTAClick} className="w-full md:w-auto bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold text-lg py-6 px-8 rounded-full shadow-lg transition-all duration-300 hover:scale-105">
