@@ -28,8 +28,7 @@ const Index = () => {
     return eventDate;
   });
   const handleCTAClick = () => {
-    // Add your CTA logic here (e.g., redirect to checkout, open modal, etc.)
-    console.log("CTA clicked!");
+    window.location.href = "https://chk.eduzz.com/Z0B5NA3JWA?utm_source=botao_pv&utm_campaign=workshop_1&utm_id=workshop_1_pv";
   };
   return <div className="min-h-screen bg-background">
       {/* Urgency Bar */}
