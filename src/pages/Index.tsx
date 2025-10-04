@@ -266,6 +266,15 @@ const Index = () => {
               </p>
             </div>
           </div>
+
+          <div className="mt-12 text-center">
+            <Button 
+              onClick={handleCTAClick} 
+              className="w-full md:w-auto bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold text-xl py-8 px-12 rounded-2xl shadow-2xl transition-all duration-300 hover:scale-105"
+            >
+              Garanta Seu VIP por Apenas R$48
+            </Button>
+          </div>
         </div>
 
         {/* FAQ Section */}
