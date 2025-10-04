@@ -151,7 +151,7 @@ const Index = () => {
                 (Sim... São apenas R$ 48)
               </p>
               
-              <p className="text-base text-muted-foreground leading-relaxed">Você vai ganhar como Bônus o Curso "Toque seu primeiro samba em 7 dias" que custa R$27,00 pelo preço único: R$48, ou seja, 
+              <p className="text-base text-muted-foreground leading-relaxed">Você vai ganhar como Bônus o Curso "Toque seu primeiro samba em 7 dias" que custa R$27,00 pelo preço único: R$48, ou seja, 
 
 
 Você fazer o workshop com o Mestre Carlos Café por 48-27: R$21,00</p>
@@ -182,7 +182,102 @@ Você fazer o workshop com o Mestre Carlos Café por 48-27: R$21,00</p>
             </div>
           </div>
         </div>
+
+        {/* Payment Methods Section */}
+        <div className="mt-16 md:mt-24">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground flex items-center justify-center gap-3">
+              <span>💳</span> Formas de Pagamento
+            </h2>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {/* Credit Card */}
+            <div className="bg-card border border-border rounded-2xl p-8 text-center space-y-4">
+              <div className="flex justify-center">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                  <span className="text-3xl">💳</span>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-foreground flex items-center justify-center gap-2">
+                <span className="text-primary">✓</span> Cartão de Crédito
+              </h3>
+              <p className="text-primary font-semibold">Parcele em até 12x</p>
+              <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
+                <span className="text-muted-foreground">⊕</span>
+                Acesso liberado imediatamente após aprovação
+              </p>
+            </div>
+
+            {/* Pix */}
+            <div className="bg-card border border-border rounded-2xl p-8 text-center space-y-4">
+              <div className="flex justify-center">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                  <span className="text-3xl">📱</span>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-foreground flex items-center justify-center gap-2">
+                <span className="text-primary">✓</span> Pix
+              </h3>
+              <p className="text-primary font-semibold">Pagamento à vista</p>
+              <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
+                <span className="text-muted-foreground">⊕</span>
+                Liberação rápida em poucos minutos
+              </p>
+            </div>
+
+            {/* Boleto Bancário */}
+            <div className="bg-card border border-border rounded-2xl p-8 text-center space-y-4">
+              <div className="flex justify-center">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                  <span className="text-3xl">📄</span>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-foreground flex items-center justify-center gap-2">
+                <span className="text-primary">✓</span> Boleto Bancário
+              </h3>
+              <p className="text-primary font-semibold">Pagamento à vista</p>
+              <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
+                <span className="text-muted-foreground">⊕</span>
+                Liberação em até 2 dias úteis após o pagamento
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+
+      {/* Footer */}
+      <footer className="bg-card border-t border-border mt-24 py-12">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 text-center space-y-6">
+          <p className="text-sm text-muted-foreground leading-relaxed max-w-4xl mx-auto">
+            A Comunidade Panderando com Carlos Café não é uma empresa associada ao WhatsApp INC, Facebook INC, META ou qualquer uma de suas empresas, e não possui nenhuma relação comercial ou comprometimento para usar.
+          </p>
+          
+          <p className="text-sm text-muted-foreground">
+            Copyright © 2025. Desenvolvido por Edilson Morais. Ao fazer seu cadastro em nosso site, você concorda com a nossa Termos de Uso e Política de Privacidade.
+          </p>
+          
+          <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
+            <span className="text-foreground font-medium">Panderando com Carlos Café</span>
+            <span className="text-muted-foreground">|</span>
+            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Termos de Uso</a>
+            <span className="text-muted-foreground">|</span>
+            <a href="https://politica-de-privacidade.rota50ia.com/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">Política de Privacidade</a>
+          </div>
+          
+          <p className="text-sm text-muted-foreground">
+            Todos os direitos reservados – Edilson Morais 2025
+          </p>
+          
+          <p className="text-sm text-muted-foreground">
+            Contato: <a href="mailto:edilsonafi@gmail.com" className="text-foreground hover:text-primary transition-colors">edilsonafi@gmail.com</a>
+          </p>
+          
+          <p className="text-xs text-muted-foreground">
+            Desenvolvido por Edilson Morais
+          </p>
+        </div>
+      </footer>
     </div>;
 };
 export default Index;
