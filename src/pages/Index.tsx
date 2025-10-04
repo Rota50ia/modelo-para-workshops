@@ -4,6 +4,7 @@ import { AlertTriangle } from "lucide-react";
 import UrgencyBar from "@/components/UrgencyBar";
 import CountdownTimer from "@/components/CountdownTimer";
 import heroImage from "@/assets/carlos-cafe-hero.png";
+import bonusImage from "@/assets/bonus-curso-samba.png";
 const Index = () => {
   // Event date: October 15, 2025 at 20:00 (8:00 PM)
   const [targetDate] = useState(() => {
@@ -140,6 +141,54 @@ const Index = () => {
             <p className="text-muted-foreground text-sm">
               Pagamento único. Acesso imediato. Garantia de 7 dias.
             </p>
+          </div>
+        </div>
+
+        {/* Why VIP Section */}
+        <div className="mt-16 md:mt-24">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
+            {/* Left Side - Text Content */}
+            <div className="space-y-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+                Por Que Você Deve Fazer o Workshop VIP
+              </h2>
+              
+              <p className="text-xl text-foreground font-medium">
+                (Sim... São apenas R$ 48)
+              </p>
+              
+              <p className="text-base text-muted-foreground leading-relaxed">
+                Você vai ganhar como Bônus o Curso "Toque seu primeiro samba em 7 dias" que custa R$27,00 pelo preço único: R$48, ou seja, Você fazer o workshop com o Mestre Carlos Café por 48-27: R$21,00
+              </p>
+            </div>
+
+            {/* Right Side - Bonus Card */}
+            <div className="bg-card border border-border rounded-2xl p-6 md:p-8">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="w-6 h-6 bg-accent rounded flex items-center justify-center">
+                  <span className="text-accent-foreground text-xs font-bold">🎁</span>
+                </div>
+                <span className="text-accent font-bold text-sm uppercase tracking-wide">BÔNUS</span>
+              </div>
+              
+              <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">
+                Toque seu primeiro Samba
+              </h3>
+              
+              <div className="rounded-xl overflow-hidden border border-border mb-6">
+                <img 
+                  src={bonusImage} 
+                  alt="Curso Bônus - Toque seu primeiro Samba em 7 dias" 
+                  className="w-full h-auto"
+                />
+              </div>
+              
+              <div className="space-y-3">
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Aprenda os fundamentos da batida de pandeiro com orientações guiadas e práticas diretas que levam você do zero até tocar samba.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
