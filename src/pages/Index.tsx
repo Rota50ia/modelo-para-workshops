@@ -11,15 +11,14 @@ const Index = () => {
     const date = new Date();
     const currentYear = date.getFullYear();
     const currentMonth = date.getMonth();
-    
+
     // Set to October 15 at 20:00
     const eventDate = new Date(currentYear, 9, 15, 20, 0, 0); // Month is 0-indexed (9 = October)
-    
+
     // If the date has passed this year, set it for next year
     if (eventDate < date) {
       eventDate.setFullYear(currentYear + 1);
     }
-    
     return eventDate;
   });
   const handleCTAClick = () => {
@@ -131,10 +130,7 @@ const Index = () => {
               Nós devolvemos todo seu dinheiro na mesma hora. Sem perguntas. Sem burocracia. Sem risco.
             </p>
             
-            <Button 
-              onClick={handleCTAClick} 
-              className="w-full md:w-auto bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-xl py-8 px-12 rounded-2xl shadow-2xl transition-all duration-300 hover:scale-105 mb-4"
-            >
+            <Button onClick={handleCTAClick} className="w-full md:w-auto bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-xl py-8 px-12 rounded-2xl shadow-2xl transition-all duration-300 hover:scale-105 mb-4">
               GARANTIR ACESSO VIP → R$48
             </Button>
             
@@ -149,9 +145,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
             {/* Left Side - Text Content */}
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-                Por Que Você Deve Fazer o Workshop VIP
-              </h2>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">Por Que Você Deve Fazer o Workshop</h2>
               
               <p className="text-xl text-foreground font-medium">
                 (Sim... São apenas R$ 48)
@@ -176,11 +170,7 @@ const Index = () => {
               </h3>
               
               <div className="rounded-xl overflow-hidden border border-border mb-6">
-                <img 
-                  src={bonusImage} 
-                  alt="Curso Bônus - Toque seu primeiro Samba em 7 dias" 
-                  className="w-full h-auto"
-                />
+                <img src={bonusImage} alt="Curso Bônus - Toque seu primeiro Samba em 7 dias" className="w-full h-auto" />
               </div>
               
               <div className="space-y-3">
