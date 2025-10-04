@@ -41,9 +41,7 @@ const Index = () => {
                 <Button onClick={handleCTAClick} className="w-full md:w-auto bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold text-lg py-6 px-8 rounded-full shadow-lg transition-all duration-300 hover:scale-105">
                   GARANTA SUA VAGA
                 </Button>
-                <p className="text-foreground text-sm mt-3 font-medium">
-                  E você vai receber 0
-                </p>
+                
               </div>
             </div>
 
