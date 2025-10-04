@@ -106,6 +106,42 @@ const Index = () => {
             </div>
           </div>
         </div>
+
+        {/* Guarantee Section */}
+        <div className="mt-16 md:mt-24">
+          <div className="bg-card border border-border rounded-3xl p-8 md:p-12 text-center max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              "Garantia 100x" Ou Seu Dinheiro de Volta
+            </h2>
+            
+            <p className="text-muted-foreground text-lg mb-6">
+              Garantia de 100% de Satisfação – ✅ Risco ZERO Para Você
+            </p>
+            
+            <p className="text-muted-foreground text-base mb-4">
+              Se depois de assistir o workshop e receber todas as dicas de Carlos Café,
+            </p>
+            
+            <p className="text-muted-foreground text-base mb-4">
+              você não achar HONESTAMENTE que vale pelo menos 100 vezes os R$48 que pagou...
+            </p>
+            
+            <p className="text-muted-foreground text-base mb-8">
+              Nós devolvemos todo seu dinheiro na mesma hora. Sem perguntas. Sem burocracia. Sem risco.
+            </p>
+            
+            <Button 
+              onClick={handleCTAClick} 
+              className="w-full md:w-auto bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-xl py-8 px-12 rounded-2xl shadow-2xl transition-all duration-300 hover:scale-105 mb-4"
+            >
+              GARANTIR ACESSO VIP → R$48
+            </Button>
+            
+            <p className="text-muted-foreground text-sm">
+              Pagamento único. Acesso imediato. Garantia de 7 dias.
+            </p>
+          </div>
+        </div>
       </div>
     </div>;
 };
