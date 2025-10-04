@@ -151,9 +151,10 @@ const Index = () => {
                 (Sim... São apenas R$ 48)
               </p>
               
-              <p className="text-base text-muted-foreground leading-relaxed">
-                Você vai ganhar como Bônus o Curso "Toque seu primeiro samba em 7 dias" que custa R$27,00 pelo preço único: R$48, ou seja, Você fazer o workshop com o Mestre Carlos Café por 48-27: R$21,00
-              </p>
+              <p className="text-base text-muted-foreground leading-relaxed">Você vai ganhar como Bônus o Curso "Toque seu primeiro samba em 7 dias" que custa R$27,00 pelo preço único: R$48, ou seja, 
+
+
+Você fazer o workshop com o Mestre Carlos Café por 48-27: R$21,00</p>
             </div>
 
             {/* Right Side - Bonus Card */}
