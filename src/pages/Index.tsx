@@ -145,16 +145,35 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
             {/* Left Side - Text Content */}
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">Por Que Você Deve Fazer o Workshop</h2>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+                Por Que Você Deve Fazer o Workshop
+              </h2>
               
-              <p className="text-xl text-foreground font-medium">
+              <p className="text-2xl md:text-3xl text-foreground font-bold">
                 (Sim... São apenas R$ 48)
               </p>
               
-              <p className="text-base text-muted-foreground leading-relaxed">Você vai ganhar como Bônus o Curso "Toque seu primeiro samba em 7 dias" que custa R$27,00 pelo preço único: R$48, ou seja, 
-
-
-Você fazer o workshop com o Mestre Carlos Café por 48-27: R$21,00</p>
+              <div className="space-y-4">
+                <p className="text-lg text-foreground leading-relaxed">
+                  Você vai ganhar como <span className="font-bold text-accent">Bônus</span> o Curso <span className="font-semibold">&quot;Toque seu primeiro samba em 7 dias&quot;</span> que custa <span className="font-bold text-primary">R$27,00</span> pelo preço único: <span className="font-bold text-accent text-2xl">R$48</span>
+                </p>
+                
+                <div className="bg-accent/10 border-2 border-accent rounded-2xl p-6 space-y-3">
+                  <p className="text-lg text-foreground font-semibold">
+                    Ou seja:
+                  </p>
+                  <div className="flex items-center gap-3 text-xl md:text-2xl font-bold">
+                    <span className="text-foreground">R$48</span>
+                    <span className="text-muted-foreground">-</span>
+                    <span className="text-primary">R$27</span>
+                    <span className="text-accent">=</span>
+                    <span className="text-accent text-3xl">R$21,00</span>
+                  </div>
+                  <p className="text-base text-foreground font-medium">
+                    Você faz o workshop com o Mestre Carlos Café por apenas <span className="text-accent font-bold text-xl">R$21,00</span>!
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* Right Side - Bonus Card */}
