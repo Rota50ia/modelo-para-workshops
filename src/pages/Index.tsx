@@ -28,7 +28,7 @@ const Index = () => {
     return eventDate;
   });
   const handleCTAClick = () => {
-    window.location.href = "https://chk.eduzz.com/Z0B5NA3JWA?utm_source=botao_pv&utm_campaign=workshop_1&utm_id=workshop_1_pv";
+    window.location.href = "https://sun.eduzz.com/Z0B5NA3JWA";
   };
   return <div className="min-h-screen bg-background">
       {/* Urgency Bar */}
