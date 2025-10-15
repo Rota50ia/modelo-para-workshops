@@ -18,8 +18,8 @@ const Index = () => {
     const currentYear = date.getFullYear();
     const currentMonth = date.getMonth();
 
-    // Set to October 15 at 20:00
-    const eventDate = new Date(currentYear, 9, 15, 20, 0, 0); // Month is 0-indexed (9 = October)
+    // Set to October 29 at 20:00
+    const eventDate = new Date(currentYear, 9, 29, 20, 0, 0); // Month is 0-indexed (9 = October)
 
     // If the date has passed this year, set it for next year
     if (eventDate < date) {
@@ -76,7 +76,7 @@ const Index = () => {
               <span className="text-accent font-bold text-sm uppercase tracking-wide">
                 WORKSHOP LIVE
               </span>
-              <span className="text-foreground font-bold text-sm">| QUA 15/10 ÀS 20H</span>
+              <span className="text-foreground font-bold text-sm">| QUA 29/10 ÀS 20H</span>
             </div>
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-snug">
